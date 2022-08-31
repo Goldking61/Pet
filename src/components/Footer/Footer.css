@@ -4,21 +4,10 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: aqua;
     }
-    
-    h2 {
-        font-size: 1em;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        
-        color: black;
-        text-decoration: none;
-    }
-    h2:hover {
-        text-decoration: underline #111;
-    }
-    
-    
-    mainarea1 {
+
+mainarea1 {
         display: grid;
+        text-align: left;
         padding: 1%;
         border: 1px solid aqua;
-    }
+}

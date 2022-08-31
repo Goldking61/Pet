@@ -1,11 +1,14 @@
 import "./Main.css";
-
+import technologies from '../data/technologies';
 
 function Main() {
     return(
         <mainarea2>
-        <h1-main>Main</h1-main>
-        <h1-main>Page</h1-main>
+        {technologies.map(item=>
+        <section>
+        <h2>{item.title}</h2>
+        <text>{item.body}</text>
+        </section>)}
         </mainarea2>
     );
 }
