@@ -1,0 +1,25 @@
+h1-main {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 2px dotted grey;
+    }
+
+h2 {
+font-size: 1em;
+font-family: Georgia, 'Times New Roman', Times, serif;    
+color: black;
+text-decoration: none;
+ }
+
+h2:hover {
+    text-decoration: underline #111;
+}
+
+mainarea2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2%;
+    margin: 1%;
+    border: 1px solid black;
+}
