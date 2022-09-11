@@ -1,10 +1,20 @@
-import "./Footer.css";
+import "styled-components";
+import styled from "styled-components";
+
+const Area = styled.div`
+border: solid 2px white;
+text-align: center;
+`
+const FooterText = styled.div`
+font-size: 5vh;
+color: blueviolet;
+`
 
 function Footer() {
     return(
-        <mainarea1>
-            <h1>Footer</h1>
-        </mainarea1>
+            <Area>
+            <FooterText>С наилучшими пожеланиями. <br/>Создатель сайта Кукуев Леонид Олегович</FooterText>
+            </Area>
     );
 }
 

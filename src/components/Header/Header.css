@@ -10,21 +10,10 @@ h2 {
     font-size: 1em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    color: black;
+    color: blueviolet;
     text-decoration: none;
 }
 h2:hover {
     text-decoration: underline #111;
 }
 
-links {
-    display: grid;
-    grid-template-columns: 10% 10% 10%;
-    text-decoration: none;
-}
-
-mainarea {
-    display: grid;
-    padding: 1%;
-    border: 1px solid aqua;
-}
