@@ -7,6 +7,11 @@ width:100%;
 color: black;
 text-shadow: 0 0 2px;
 text-decoration: none;
+font-weight: 600;
+background-image: linear-gradient(to left, blue, blueviolet, white, blueviolet);;
+color: transparent;
+background-clip: text;
+-webkit-background-clip: text;  
 
 &:hover{
     font-weight: bold;
@@ -40,8 +45,8 @@ function Header() {
         <MainArea>
             <Links>
                 <StyledLink to="/  ">Главная</StyledLink>
-                <StyledLink to="/hello ">Hello</StyledLink>
-                <StyledLink to="/about  ">О компании</StyledLink>
+                <StyledLink to="/hello ">Мои навыки</StyledLink>
+                <StyledLink to="/about  ">Что я люблю?</StyledLink>
                 <StyledLink to="/CSS  ">Примеры CSS</StyledLink>
             </Links>
         </MainArea>

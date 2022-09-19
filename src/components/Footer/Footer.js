@@ -2,7 +2,6 @@ import "styled-components";
 import styled from "styled-components";
 
 const Area = styled.div`
-border: solid 2px white;
 text-align: center;
 `
 const FooterText = styled.div`

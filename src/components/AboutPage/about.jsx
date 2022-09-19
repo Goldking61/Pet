@@ -4,10 +4,13 @@ const AboutArea = styled.div`
 height: 100%;
 width: 100%;
 `
+
 const PlanetSpin = styled.div`
 position: fixed;
 animation: rotation 40s infinite linear;
-background-image: url("/images/firstPlanet-PhotoRoom.png");
+width: 100%;
+height: 100%;
+background-image: url(${(props)=> props.cimg});
 background-size: 100% 100%;
 width: 10vw;
 height: 20vh;
@@ -66,17 +69,23 @@ z-index: 99;
 */
 
 const About = () => {
-  let rand1 = Math.floor(Math.random()*(30-15)+15);
-  let rand2 = Math.floor(Math.random()*(15-5)+5);
+  let rand1 = Math.floor(Math.random()*(30-15+15));
+  let rand2 = Math.floor(Math.random()*(18-10+10));
   let rand3 = Math.floor(Math.random()*(30-15)+15);
-  let rand4 = Math.floor(Math.random()*(15-5)+5);
+  let rand4 = Math.floor(Math.random()*(18-10)+10);
   let rand5 = Math.floor(Math.random()*(30-15)+15);
-  let rand6 = Math.floor(Math.random()*(15-5)+5);
+  let rand6 = Math.floor(Math.random()*(20-10)+10);
+  let Planet = Math.floor(Math.random()*3+1);
+  let Planet2 = Math.floor(Math.random()*3+1);
+  let Planet3 = Math.floor(Math.random()*3+1);
+  console.log(Planet,Planet2,Planet3)
     return (
       <AboutArea>
-        <AboutMeV2 onClick = {() => window.location.href="/about/:{rand1}"} randl={(rand1+"vw")} randt={(rand2+"vh")}><PlanetSpin/><AboutText>Вкусная еда</AboutText></AboutMeV2>
-        <AboutMeV2 randl={(rand3+rand1+"vw")} randt={(rand4+rand2+"vh")}><PlanetSpin/><AboutText>Компьютерные игры</AboutText></AboutMeV2>
-        <AboutMeV2 randl={(rand5+rand3+rand1+"vw")} randt={(rand6+rand4+rand2+"vh")}><PlanetSpin/><AboutText>Путешествовать</AboutText></AboutMeV2>
+        <AboutMeV2 onClick = {() => window.location.href="/about/:{rand1}"} randl={(rand1+"vw")} randt={(rand2+"vh")}><PlanetSpin cimg={`/images/Planet${Planet}.png`}/><AboutText>Вкусная еда</AboutText></AboutMeV2>
+        <AboutMeV2 randl={(rand3+rand1+"vw")} randt={(rand4+rand2+"vh")}><PlanetSpin cimg={`/images/Planet${Planet3}.png`}/><AboutText>Компьютерные игры</AboutText></AboutMeV2>
+        <AboutMeV2 randl={(rand5+rand3+rand1+"vw")} randt={(rand6+rand4+rand2+"vh")}><PlanetSpin cimg={`/images/Planet${Planet2}.png`}/><AboutText>Путешествовать</AboutText></AboutMeV2>
+        <AboutMeV2 randl={(rand1+"vw")} randt={(rand6+rand4+rand2+"vh")}><PlanetSpin cimg={`/images/Planet${Planet}.png`}/><AboutText>Готовить</AboutText></AboutMeV2>
+        <AboutMeV2 randl={(rand5+rand3+rand1+"vw")} randt={(rand2+"vh")}><PlanetSpin cimg={`/images/Planet${Planet2}.png`}/><AboutText>Музыка</AboutText></AboutMeV2>
       </AboutArea>
     );
   }

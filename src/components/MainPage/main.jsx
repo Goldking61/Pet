@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import WorkPlaces from '../data/WorkPlaces.json';
+import { useState } from "react";
 
 const MainArea = styled.div`
 width: 90%;
@@ -47,6 +48,7 @@ text-align: center;
 `
 
 const MainPage = () => {
+  const [auth, isAuth] = useState('none')
     return (
       <DivArea>
       <Name>Это я</Name>

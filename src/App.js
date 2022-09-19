@@ -13,8 +13,8 @@ import { Auth } from "./components/Authorization/Auth.jsx";
 
 function App() {
   const [auth, isAuth] = useState(false);
-  const history = useHistory();
-  const User = getCurrentUser();
+  // const history = useHistory();
+  // const User = getCurrentUser();
   console.log(auth)
   return (
     // Как правильно сделать?
